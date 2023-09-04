@@ -6,34 +6,31 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD4Uo1iIzVhVZ9F3PFD0kkLfOgx71uocVY",
-  authDomain: "ob-tasklist-firebase.firebaseapp.com",
-  projectId: "ob-tasklist-firebase",
-  storageBucket: "ob-tasklist-firebase.appspot.com",
-  messagingSenderId: "45362721152",
-  appId: "1:45362721152:web:eb9a450e4b347e5fcf1165"
-};
-
-const developmentFirebaseConfig = {
-  apiKey: "AIzaSyAIWlkvSQuVj5SKzWoDX7y0hMbpqnSM9SI",
-  authDomain: "dev-ob-tasklist-firebase.firebaseapp.com",
-  projectId: "dev-ob-tasklist-firebase",
-  storageBucket: "dev-ob-tasklist-firebase.appspot.com",
-  messagingSenderId: "321960608896",
-  appId: "1:321960608896:web:59d9cb7512a4f934f65265"
+  apiKey: "AIzaSyBA6lDeBQWLLlbnNlGco9aw3ixwgLIBq_k",
+  authDomain: "tasklist-firebase-59b36.firebaseapp.com",
+  projectId: "tasklist-firebase-59b36",
+  storageBucket: "tasklist-firebase-59b36.appspot.com",
+  messagingSenderId: "701225566186",
+  appId: "1:701225566186:web:e29f90672501eed6cbfc93"
 };
 
 // Initialize Firebase
-let app;
-if (process.env.NODE_ENV === 'production') {
-  app = initializeApp(firebaseConfig);
-} else {
-  app = initializeApp(developmentFirebaseConfig);
-}
-// Inicializar Firestore
-const db = getFirestore();
+export const app = initializeApp(firebaseConfig);
 
-export {
-  app,
-  db
-}
+//Inicializar Firestore
+export const db = getFirestore()
+
+// Initialize Firebase
+// let app;
+// if (process.env.NODE_ENV === 'production') {
+//   app = initializeApp(firebaseConfig);
+// } else {
+//   app = initializeApp(developmentFirebaseConfig);
+// }
+// // Inicializar Firestore
+// const db = getFirestore();
+
+// export {
+//   app,
+//   db
+// }
