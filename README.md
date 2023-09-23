@@ -44,3 +44,5 @@ Añade un nuevo componente y vuelve a desplegar la aplicación utilizando "docke
 2. Utiliza git para crear un nuevo commit
 3. Realiza el push de esta nueva versión
 4. Verifica que el nuevo proyecto se ha desplegado correctamente
+
+### Usamos Cypress y testing de integracion (End to End)
